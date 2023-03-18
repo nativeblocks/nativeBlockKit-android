@@ -32,19 +32,8 @@ class NativeContainerBlock : INativeBlock {
         val paddingEnd = blockProps.block?.properties?.find { it.key == "paddingEnd" }?.value
         val paddingBottom = blockProps.block?.properties?.find { it.key == "paddingBottom" }?.value
 
-
         var modifier = NativeTheme
             .sizeMapper(width, height)
-            .padding(
-                NativeTheme.spacingMapper(
-                    listOf(
-                        paddingStart ?: "0",
-                        paddingTop ?: "0",
-                        paddingEnd ?: "0",
-                        paddingBottom ?: "0",
-                    )
-                )
-            )
             .clip(
                 shape = NativeTheme.shapeMapper(
                     blockProps.block?.properties?.find { it.key == "shape" }?.value,
@@ -58,6 +47,16 @@ class NativeContainerBlock : INativeBlock {
                 NativeTheme.rgbColorBuilder(
                     blockProps.block?.properties?.find { it.key == "backgroundColor" }?.value,
                     blockProps.block?.properties?.find { it.key == "backgroundColorOpacity" }?.value
+                )
+            )
+            .padding(
+                NativeTheme.spacingMapper(
+                    listOf(
+                        paddingStart ?: "0",
+                        paddingTop ?: "0",
+                        paddingEnd ?: "0",
+                        paddingBottom ?: "0",
+                    )
                 )
             )
 
