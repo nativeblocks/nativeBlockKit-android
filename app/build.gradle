@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'io.nativeblocks.nativeblockkit.basic'
+    namespace 'io.nativeblocks.nativeblockkit.basic.sample'
     compileSdk 33
 
     defaultConfig {
-        applicationId "io.nativeblocks.nativeblockkit.basic"
+        applicationId "io.nativeblocks.nativeblockkit.basic.sample"
         minSdk 24
         targetSdk 33
         versionCode 1

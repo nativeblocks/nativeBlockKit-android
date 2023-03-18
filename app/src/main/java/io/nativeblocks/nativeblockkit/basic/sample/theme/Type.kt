@@ -1,4 +1,4 @@
-package io.nativeblocks.nativeblockkit.basic.ui.theme
+package io.nativeblocks.nativeblockkit.basic.sample.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

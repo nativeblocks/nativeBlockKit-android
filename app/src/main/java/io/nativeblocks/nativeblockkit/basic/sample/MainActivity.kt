@@ -1,4 +1,4 @@
-package io.nativeblocks.nativeblockkit.basic
+package io.nativeblocks.nativeblockkit.basic.sample
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import io.nativeblocks.nativeblockkit.basic.ui.theme.NativeBlockKitbasicTheme
+import io.nativeblocks.nativeblockkit.basic.sample.theme.NativeBlockKitbasicTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
