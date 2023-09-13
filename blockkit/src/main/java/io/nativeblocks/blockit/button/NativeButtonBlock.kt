@@ -217,7 +217,7 @@ class NativeButtonBlock : INativeBlock {
 
 @Preview
 @Composable
-fun NativeButtonBlockPreview() {
+private fun NativeButtonBlockPreview() {
     NativeButtonBlock().BlockView(
         blockProps = BlockProps(
             variables = mapOf("text" to NativeVariableModel("text", "text", "STRING")),

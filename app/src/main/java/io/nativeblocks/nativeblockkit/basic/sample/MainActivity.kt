@@ -3,41 +3,26 @@ package io.nativeblocks.nativeblockkit.basic.sample
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import io.nativeblocks.nativeblockkit.basic.sample.theme.NativeBlockKitbasicTheme
+import io.nativeblocks.blockit.NativeblocksBlockHelper
+import io.nativeblocks.core.api.NativeblocksManager
+import io.nativeblocks.core.api.NativeblocksProvider
+
+private const val NATIVEBLOCKS_API_KEY =
+    "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3Y2FiY2FjMS00MzI3LTRkMWQtOTVmMS1hOGMyYzc4MjE3MzciLCJvcmciOiI1MmZiNjIzOC1kY2FiLTQwYTYtODdhZC02ZGYyYzliYzVlZDgiLCJpYXQiOjE2OTIzODQ0MTIsImV4cCI6MTcyMzkyMDQxMn0.0hF-KSXtcqxMNcar1OOBs-H9gDTkAoC903TXVw6bGDg"
+
+private const val NATIVEBLOCKS_API_URL = "http://192.168.1.39:8585/graphql"
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        NativeblocksManager.initialize(this, NATIVEBLOCKS_API_URL, NATIVEBLOCKS_API_KEY)
+
+        NativeblocksBlockHelper.provideBlocks()
+
         setContent {
-            NativeBlockKitbasicTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Android")
-                }
-            }
+            NativeblocksProvider()
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    NativeBlockKitbasicTheme {
-        Greeting("Android")
-    }
-}
