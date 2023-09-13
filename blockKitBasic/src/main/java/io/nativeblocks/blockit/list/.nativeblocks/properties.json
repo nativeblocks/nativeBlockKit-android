@@ -1,0 +1,192 @@
+[
+  {
+    "description": "hex color",
+    "key": "backgroundColor",
+    "type": "STRING",
+    "value_picker": "color-picker",
+    "value": "#fafafa",
+    "value_picker_category": "color",
+    "value_picker_group": "foregroundColor",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "a number between 0 to 100",
+    "key": "backgroundColorOpacity",
+    "type": "INT",
+    "value_picker": "slider",
+    "value": "100",
+    "value_picker_category": "color",
+    "value_picker_group": "backgroundColor",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingEnd",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shapeRadiusBottomStart",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "4",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shapeRadiusBottomEnd",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "4",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "just for (Y) horizontal",
+    "key": "horizontalAlignment",
+    "type": "STRING",
+    "value_picker": "dropdown",
+    "value": "start",
+    "value_picker_category": "layout",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"top\",\"value\":\"top\"},{\"id\":\"bottom\",\"value\":\"bottom\"},{\"id\":\"centerHorizontally\",\"value\":\"centerHorizontally\"}]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shapeRadiusTopEnd",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "4",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shadow",
+    "type": "STRING",
+    "value_picker": "number-input",
+    "value": "0",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "rectangle or circle",
+    "key": "shape",
+    "type": "STRING",
+    "value_picker": "dropdown",
+    "value": "rectangle",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"rectangle\",\"value\":\"rectangle\"},{\"id\":\"circle\",\"value\":\"circle\"}]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shapeRadiusTopStart",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "4",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "layout direction",
+    "key": "direction",
+    "type": "STRING",
+    "value_picker": "dropdown",
+    "value": "Y",
+    "value_picker_category": "layout",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"X\",\"value\":\"(X) horizontal\"},{\"id\":\"Y\",\"value\":\"(Y) vertical\"},{\"id\":\"Z\",\"value\":\"(Z) overlay\"}]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingBottom",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingTop",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingStart",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "match or wrap or number",
+    "key": "height",
+    "type": "STRING",
+    "value_picker": "combobox-input",
+    "value": "wrap",
+    "value_picker_category": "layout",
+    "value_picker_group": "size",
+    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+  },
+  {
+    "description": "match or wrap or number",
+    "key": "width",
+    "type": "STRING",
+    "value_picker": "combobox-input",
+    "value": "match",
+    "value_picker_category": "layout",
+    "value_picker_group": "size",
+    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+  },
+  {
+    "description": "just for (Y) vertical",
+    "key": "verticalArrangement",
+    "type": "STRING",
+    "value_picker": "combobox-input",
+    "value": "top",
+    "value_picker_category": "layout",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"top\",\"value\":\"top\"},{\"id\":\"bottom\",\"value\":\"bottom\"},{\"id\":\"center\",\"value\":\"center\"},{\"id\":\"spaceBetween\",\"value\":\"spaceBetween\"},{\"id\":\"spaceAround\",\"value\":\"spaceAround\"},{\"id\":\"spaceEvenly\",\"value\":\"spaceEvenly\"}]"
+  },
+  {
+    "description": "just for (X) horizontal",
+    "key": "horizontalArrangement",
+    "type": "STRING",
+    "value_picker": "combobox-input",
+    "value": "start",
+    "value_picker_category": "layout",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"start\",\"value\":\"start\"},{\"id\":\"end\",\"value\":\"end\"},{\"id\":\"center\",\"value\":\"center\"},{\"id\":\"spaceBetween\",\"value\":\"spaceBetween\"},{\"id\":\"spaceAround\",\"value\":\"spaceAround\"},{\"id\":\"spaceEvenly\",\"value\":\"spaceEvenly\"}]"
+  },
+  {
+    "description": "just for (X) vertical",
+    "key": "verticalAlignment",
+    "type": "STRING",
+    "value_picker": "dropdown",
+    "value": "top",
+    "value_picker_category": "layout",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"top\",\"value\":\"top\"},{\"id\":\"bottom\",\"value\":\"bottom\"},{\"id\":\"centerVertically\",\"value\":\"centerVertically\"}]"
+  }
+]
