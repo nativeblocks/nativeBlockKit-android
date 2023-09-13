@@ -1,0 +1,152 @@
+[
+  {
+    "description": "hex color",
+    "key": "foregroundColor",
+    "type": "STRING",
+    "value_picker": "color-picker",
+    "value": "#fafafa",
+    "value_picker_category": "color",
+    "value_picker_group": "foregroundColor",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "a number between 0 to 100",
+    "key": "foregroundColorOpacity",
+    "type": "INT",
+    "value_picker": "slider",
+    "value": "100",
+    "value_picker_category": "color",
+    "value_picker_group": "foregroundColor",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingTop",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "font family name",
+    "key": "fontFamily",
+    "type": "STRING",
+    "value_picker": "combobox-input",
+    "value": "default",
+    "value_picker_category": "font",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"default\",\"value\":\"default\"}]"
+  },
+  {
+    "description": "letter spacing",
+    "key": "letterSpacing",
+    "type": "STRING",
+    "value_picker": "number-input",
+    "value": "",
+    "value_picker_category": "font",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingStart",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "match or wrap or number",
+    "key": "height",
+    "type": "STRING",
+    "value_picker": "combobox-input",
+    "value": "wrap",
+    "value_picker_category": "layout",
+    "value_picker_group": "size",
+    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "fontSize",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "14",
+    "value_picker_category": "font",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shadow",
+    "type": "STRING",
+    "value_picker": "number-input",
+    "value": "0",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingBottom",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "text alignment",
+    "key": "textAlign",
+    "type": "STRING",
+    "value_picker": "dropdown",
+    "value": "start",
+    "value_picker_category": "font",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"start\",\"value\":\"start\"},{\"id\":\"end\",\"value\":\"end\"},{\"id\":\"center\",\"value\":\"center\"},{\"id\":\"justify\",\"value\":\"justify\"}]"
+  },
+  {
+    "description": "text decoration",
+    "key": "textDecoration",
+    "type": "STRING",
+    "value_picker": "dropdown",
+    "value": "none",
+    "value_picker_category": "font",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"none\",\"value\":\"none\"},{\"id\":\"underline\",\"value\":\"underline\"},{\"id\":\"lineThrough\",\"value\":\"lineThrough\"}]"
+  },
+  {
+    "description": "font weight",
+    "key": "fontWeight",
+    "type": "STRING",
+    "value_picker": "dropdown",
+    "value": "normal",
+    "value_picker_category": "font",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"thin\",\"value\":\"thin\"},{\"id\":\"extraLight\",\"value\":\"extraLight\"},{\"id\":\"light\",\"value\":\"light\"},{\"id\":\"normal\",\"value\":\"normal\"},{\"id\":\"medium\",\"value\":\"medium\"},{\"id\":\"semiBold\",\"value\":\"semiBold\"},{\"id\":\"bold\",\"value\":\"bold\"},{\"id\":\"extraBold\",\"value\":\"extraBold\"},{\"id\":\"black\",\"value\":\"black\"}]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingEnd",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "match or wrap or number",
+    "key": "width",
+    "type": "STRING",
+    "value_picker": "combobox-input",
+    "value": "match",
+    "value_picker_category": "layout",
+    "value_picker_group": "size",
+    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+  }
+]
