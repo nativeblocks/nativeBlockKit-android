@@ -1,4 +1,4 @@
-package io.nativeblocks.blockit.button
+package io.nativeblocks.blockKit.button
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -19,7 +19,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import io.nativeblocks.blockit.icon.NativeIcon
+import io.nativeblocks.blockKit.icon.NativeIcon
 import io.nativeblocks.core.api.provider.block.BlockProps
 import io.nativeblocks.core.api.provider.block.INativeBlock
 import io.nativeblocks.core.frame.domain.model.NativeBlockDynamicPropertiesModel

@@ -1,11 +1,11 @@
-package io.nativeblocks.blockit
+package io.nativeblocks.blockKit
 
-import io.nativeblocks.blockit.button.NativeButtonBlock
-import io.nativeblocks.blockit.container.NativeContainerBlock
-import io.nativeblocks.blockit.icon.NativeIconBlock
-import io.nativeblocks.blockit.image.NativeImageBlock
-import io.nativeblocks.blockit.list.NativeListBlock
-import io.nativeblocks.blockit.text.NativeTextBlock
+import io.nativeblocks.blockKit.button.NativeButtonBlock
+import io.nativeblocks.blockKit.container.NativeContainerBlock
+import io.nativeblocks.blockKit.icon.NativeIconBlock
+import io.nativeblocks.blockKit.image.NativeImageBlock
+import io.nativeblocks.blockKit.list.NativeListBlock
+import io.nativeblocks.blockKit.text.NativeTextBlock
 import io.nativeblocks.core.api.NativeblocksManager
 
 object NativeblocksBlockHelper {

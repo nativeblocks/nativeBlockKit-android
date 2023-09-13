@@ -1,4 +1,4 @@
-package io.nativeblocks.blockit.icon
+package io.nativeblocks.blockKit.icon
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.background

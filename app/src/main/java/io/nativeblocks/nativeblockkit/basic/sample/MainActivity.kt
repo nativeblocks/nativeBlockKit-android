@@ -3,7 +3,7 @@ package io.nativeblocks.nativeblockkit.basic.sample
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import io.nativeblocks.blockit.NativeblocksBlockHelper
+import io.nativeblocks.blockKit.NativeblocksBlockHelper
 import io.nativeblocks.core.api.NativeblocksManager
 import io.nativeblocks.core.api.NativeblocksProvider
 

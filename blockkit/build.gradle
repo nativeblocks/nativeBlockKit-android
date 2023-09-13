@@ -9,7 +9,7 @@ ext {
 }
 
 android {
-    namespace 'io.nativeblocks.blockit.basic'
+    namespace 'io.nativeblocks.blockKit.basic'
     compileSdk 34
 
     defaultConfig {

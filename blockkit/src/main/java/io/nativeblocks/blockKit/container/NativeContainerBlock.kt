@@ -1,11 +1,14 @@
-package io.nativeblocks.blockit.list
+package io.nativeblocks.blockKit.container
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.ripple.rememberRipple
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
@@ -14,8 +17,10 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.unit.dp
 import io.nativeblocks.core.api.provider.block.BlockProps
 import io.nativeblocks.core.api.provider.block.INativeBlock
+import io.nativeblocks.core.frame.domain.model.NativeBlockDynamicPropertiesModel
 import io.nativeblocks.core.util.blockProvideEvent
 import io.nativeblocks.core.util.clickableEvents
+import io.nativeblocks.core.util.findAlignment
 import io.nativeblocks.core.util.findAlignmentHorizontal
 import io.nativeblocks.core.util.findAlignmentVertical
 import io.nativeblocks.core.util.findArrangementHorizontal
@@ -24,10 +29,8 @@ import io.nativeblocks.core.util.shapeMapper
 import io.nativeblocks.core.util.spacingMapper
 import io.nativeblocks.core.util.toArgb
 import io.nativeblocks.core.util.widthAndHeight
-import io.nativeblocks.nativejson.NativeJsonPath
 
-class NativeListBlock : INativeBlock {
-
+class NativeContainerBlock : INativeBlock {
     @Composable
     override fun BlockView(blockProps: BlockProps) {
         val visibility = blockProps.variables?.get(blockProps.block?.visibility)
@@ -35,17 +38,8 @@ class NativeListBlock : INativeBlock {
             return
         }
 
-        val variable = blockProps.variables?.get(blockProps.block?.key)
         val properties = blockProps.block?.properties ?: mapOf()
         val magic = blockProps.magics?.get(blockProps.block?.key)
-
-        val list: List<*> = try {
-            val query = blockProps.block?.jsonPath
-            NativeJsonPath().query(variable?.value.orEmpty(), query) as List<*>
-        } catch (e: Exception) {
-            e.printStackTrace()
-            listOf<Any>()
-        }
 
         val width = properties["width"]?.value
         val height = properties["height"]?.value
@@ -55,6 +49,9 @@ class NativeListBlock : INativeBlock {
         val paddingEnd = properties["paddingEnd"]?.value
         val paddingBottom = properties["paddingBottom"]?.value
 
+        val shadow = properties["shadow"]?.value
+        val scrollable = properties["scrollable"]?.value
+
         val shape = shapeMapper(
             properties["shape"]?.value,
             properties["shapeRadiusTopStart"]?.value,
@@ -63,13 +60,11 @@ class NativeListBlock : INativeBlock {
             properties["shapeRadiusBottomEnd"]?.value
         )
 
-        val shadow = properties["shadow"]?.value
-
         val onClick = blockProvideEvent(blockProps, magic.orEmpty(), "onClick")
         val onLongClick = blockProvideEvent(blockProps, magic.orEmpty(), "onLongClick")
         val onDoubleClick = blockProvideEvent(blockProps, magic.orEmpty(), "onDoubleClick")
 
-        val modifier = Modifier
+        var modifier = Modifier
             .widthAndHeight(width, height)
             .shadow(
                 elevation = shadow?.toIntOrNull()?.dp ?: 0.dp,
@@ -93,33 +88,66 @@ class NativeListBlock : INativeBlock {
 
         when (properties["direction"]?.value) {
             "Y" -> { // VERTICAL
-                LazyColumn(
-                    modifier = modifier,
-                    verticalArrangement = findArrangementVertical(properties["verticalArrangement"]?.value),
-                    horizontalAlignment = findAlignmentHorizontal(properties["horizontalAlignment"]?.value)
-                ) {
-                    itemsIndexed(items = list) { itemIndex, _ ->
-                        blockProps.onChangeBlocks?.invoke(
-                            blockProps.block?.subBlocks.orEmpty(), itemIndex
-                        )
-                    }
+                if (scrollable.toBoolean()) {
+                    modifier = modifier.then(Modifier.verticalScroll(rememberScrollState()))
                 }
+                VerticalContainer(modifier, blockProps, properties)
             }
 
             "X" -> { // HORIZONTAL
-                LazyRow(
-                    modifier = modifier,
-                    verticalAlignment = findAlignmentVertical(properties["verticalAlignment"]?.value),
-                    horizontalArrangement = findArrangementHorizontal(properties["horizontalArrangement"]?.value)
-                ) {
-                    itemsIndexed(items = list) { itemIndex, _ ->
-                        blockProps.onChangeBlocks?.invoke(
-                            blockProps.block?.subBlocks.orEmpty(), itemIndex
-                        )
-                    }
+                if (scrollable.toBoolean()) {
+                    modifier = modifier.then(Modifier.horizontalScroll(rememberScrollState()))
                 }
+                HorizontalContainer(modifier, blockProps, properties)
+            }
 
+            "Z" -> { // FLAT
+                OverlayContainer(modifier, blockProps, properties)
             }
         }
+    }
+}
+
+@Composable
+private fun VerticalContainer(
+    modifier: Modifier,
+    blockProps: BlockProps,
+    properties: Map<String, NativeBlockDynamicPropertiesModel>,
+) {
+    Column(
+        modifier = modifier,
+        verticalArrangement = findArrangementVertical(properties["verticalArrangement"]?.value),
+        horizontalAlignment = findAlignmentHorizontal(properties["horizontalAlignment"]?.value)
+    ) {
+        blockProps.onChangeBlocks?.invoke(blockProps.block?.subBlocks.orEmpty(), -1)
+    }
+}
+
+@Composable
+private fun HorizontalContainer(
+    modifier: Modifier,
+    blockProps: BlockProps,
+    properties: Map<String, NativeBlockDynamicPropertiesModel>,
+) {
+    Row(
+        modifier = modifier,
+        verticalAlignment = findAlignmentVertical(properties["verticalAlignment"]?.value),
+        horizontalArrangement = findArrangementHorizontal(properties["horizontalArrangement"]?.value)
+    ) {
+        blockProps.onChangeBlocks?.invoke(blockProps.block?.subBlocks.orEmpty(), -1)
+    }
+}
+
+@Composable
+private fun OverlayContainer(
+    modifier: Modifier,
+    blockProps: BlockProps,
+    properties: Map<String, NativeBlockDynamicPropertiesModel>,
+) {
+    Box(
+        modifier = modifier,
+        contentAlignment = findAlignment(properties["contentAlignment"]?.value)
+    ) {
+        blockProps.onChangeBlocks?.invoke(blockProps.block?.subBlocks.orEmpty(), -1)
     }
 }
