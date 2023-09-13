@@ -1,0 +1,142 @@
+[
+  {
+    "description": "scale type",
+    "key": "scaleType",
+    "type": "STRING",
+    "value_picker": "dropdown",
+    "value": "none",
+    "value_picker_category": "general",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"none\",\"value\":\"none\"},{\"id\":\"crop\",\"value\":\"crop\"},{\"id\":\"inside\",\"value\":\"inside\"},{\"id\":\"fit\",\"value\":\"fit\"},{\"id\":\"fillBounds\",\"value\":\"fillBounds\"},{\"id\":\"fillWidth\",\"value\":\"fillWidth\"},{\"id\":\"fillHeight\",\"value\":\"fillHeight\"}]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shapeRadiusBottomEnd",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "4",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shapeRadiusTopStart",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "4",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shapeRadiusBottomStart",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "4",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingEnd",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shapeRadiusTopEnd",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "4",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "shadow",
+    "type": "STRING",
+    "value_picker": "number-input",
+    "value": "0",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "rectangle or circle",
+    "key": "shape",
+    "type": "STRING",
+    "value_picker": "dropdown",
+    "value": "rectangle",
+    "value_picker_category": "clip",
+    "value_picker_group": null,
+    "value_picker_option": "[{\"id\":\"rectangle\",\"value\":\"rectangle\"},{\"id\":\"circle\",\"value\":\"circle\"}]"
+  },
+  {
+    "description": "content description for accessibility",
+    "key": "contentDescription",
+    "type": "STRING",
+    "value_picker": "text-input",
+    "value": "",
+    "value_picker_category": "accessibility",
+    "value_picker_group": null,
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingBottom",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingStart",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "0 or any number",
+    "key": "paddingTop",
+    "type": "INT",
+    "value_picker": "number-input",
+    "value": "8",
+    "value_picker_category": "layout",
+    "value_picker_group": "padding",
+    "value_picker_option": "[]"
+  },
+  {
+    "description": "match or wrap or number",
+    "key": "width",
+    "type": "STRING",
+    "value_picker": "combobox-input",
+    "value": "match",
+    "value_picker_category": "layout",
+    "value_picker_group": "size",
+    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+  },
+  {
+    "description": "match or wrap or number",
+    "key": "height",
+    "type": "STRING",
+    "value_picker": "combobox-input",
+    "value": "wrap",
+    "value_picker_category": "layout",
+    "value_picker_group": "size",
+    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+  }
+]
