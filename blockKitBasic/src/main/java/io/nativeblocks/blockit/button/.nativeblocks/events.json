@@ -1,0 +1,11 @@
+[
+  {
+    "event": "onClick"
+  },
+  {
+    "event": "onLongClick"
+  },
+  {
+    "event": "onDoubleClick"
+  }
+]
