@@ -3,10 +3,10 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 android {
-    namespace 'io.nativeblocks.nativeblockkit.basic.sample'
+    namespace 'io.nativeblocks.nativeblockkit.sample'
     compileSdk 34
     defaultConfig {
-        applicationId "io.nativeblocks.nativeblockkit.basic.sample"
+        applicationId "io.nativeblocks.nativeblockkit.sample"
         minSdk 26
         targetSdk 34
         versionCode 1
