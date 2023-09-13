@@ -20,6 +20,6 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "nativeBlockKit-basic"
+rootProject.name = "nativeBlockKit-android"
 include ':app'
-include ':blockKitBasic'
+include ':blockkit'

@@ -46,7 +46,7 @@ publishing {
     publications {
         release(MavenPublication) {
             groupId = 'com.github.nativeblocks'
-            artifactId = 'nativeBlockkit-basic-android'
+            artifactId = 'nativeBlockKit-android'
             version = '0.1.0'
 
             afterEvaluate {
