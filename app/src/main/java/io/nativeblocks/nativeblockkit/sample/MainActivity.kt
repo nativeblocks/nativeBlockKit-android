@@ -1,4 +1,4 @@
-package io.nativeblocks.nativeblockkit.basic.sample
+package io.nativeblocks.nativeblockkit.sample
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,6 +11,7 @@ private const val NATIVEBLOCKS_API_KEY =
     "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3Y2FiY2FjMS00MzI3LTRkMWQtOTVmMS1hOGMyYzc4MjE3MzciLCJvcmciOiI1MmZiNjIzOC1kY2FiLTQwYTYtODdhZC02ZGYyYzliYzVlZDgiLCJpYXQiOjE2OTIzODQ0MTIsImV4cCI6MTcyMzkyMDQxMn0.0hF-KSXtcqxMNcar1OOBs-H9gDTkAoC903TXVw6bGDg"
 
 private const val NATIVEBLOCKS_API_URL = "http://192.168.1.39:8585/graphql"
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,4 +26,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
