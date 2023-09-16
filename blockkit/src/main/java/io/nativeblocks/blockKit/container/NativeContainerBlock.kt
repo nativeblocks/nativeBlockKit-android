@@ -88,14 +88,14 @@ class NativeContainerBlock : INativeBlock {
 
         when (properties["direction"]?.value) {
             "Y" -> { // VERTICAL
-                if (scrollable.toBoolean()) {
+                if (scrollable?.toBooleanStrictOrNull() == true) {
                     modifier = modifier.then(Modifier.verticalScroll(rememberScrollState()))
                 }
                 VerticalContainer(modifier, blockProps, properties)
             }
 
             "X" -> { // HORIZONTAL
-                if (scrollable.toBoolean()) {
+                if (scrollable?.toBooleanStrictOrNull() == true) {
                     modifier = modifier.then(Modifier.horizontalScroll(rememberScrollState()))
                 }
                 HorizontalContainer(modifier, blockProps, properties)

@@ -11,6 +11,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
+import androidx.compose.ui.input.nestedscroll.NestedScrollSource
+import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.unit.dp
 import io.nativeblocks.core.api.provider.block.BlockProps
 import io.nativeblocks.core.api.provider.block.INativeBlock
@@ -69,6 +73,8 @@ class NativeListBlock : INativeBlock {
         val onLongClick = blockProvideEvent(blockProps, magic.orEmpty(), "onLongClick")
         val onDoubleClick = blockProvideEvent(blockProps, magic.orEmpty(), "onDoubleClick")
 
+        val scrollable = properties["scrollable"]?.value
+
         val modifier = Modifier
             .widthAndHeight(width, height)
             .shadow(
@@ -90,6 +96,7 @@ class NativeListBlock : INativeBlock {
                 onDoubleClick = onDoubleClick
             )
             .padding(spacingMapper(listOf(paddingStart, paddingTop, paddingEnd, paddingBottom)))
+            .scrollEnabled(scrollable?.toBooleanStrictOrNull() == true)
 
         when (properties["direction"]?.value) {
             "Y" -> { // VERTICAL
@@ -123,3 +130,14 @@ class NativeListBlock : INativeBlock {
         }
     }
 }
+
+private fun Modifier.scrollEnabled(
+    enabled: Boolean,
+) = nestedScroll(
+    connection = object : NestedScrollConnection {
+        override fun onPreScroll(
+            available: Offset,
+            source: NestedScrollSource
+        ): Offset = if (enabled) Offset.Zero else available
+    }
+)
