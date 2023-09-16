@@ -5,9 +5,9 @@
     "type": "STRING",
     "value_picker": "dropdown",
     "value": "none",
-    "value_picker_category": "general",
-    "value_picker_group": null,
-    "value_picker_option": "[{\"id\":\"none\",\"value\":\"none\"},{\"id\":\"crop\",\"value\":\"crop\"},{\"id\":\"inside\",\"value\":\"inside\"},{\"id\":\"fit\",\"value\":\"fit\"},{\"id\":\"fillBounds\",\"value\":\"fillBounds\"},{\"id\":\"fillWidth\",\"value\":\"fillWidth\"},{\"id\":\"fillHeight\",\"value\":\"fillHeight\"}]"
+    "valuePickerCategory": "general",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[{\"id\":\"none\",\"value\":\"none\"},{\"id\":\"crop\",\"value\":\"crop\"},{\"id\":\"inside\",\"value\":\"inside\"},{\"id\":\"fit\",\"value\":\"fit\"},{\"id\":\"fillBounds\",\"value\":\"fillBounds\"},{\"id\":\"fillWidth\",\"value\":\"fillWidth\"},{\"id\":\"fillHeight\",\"value\":\"fillHeight\"}]"
   },
   {
     "description": "0 or any number",
@@ -15,9 +15,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "4",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -25,9 +25,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "4",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -35,9 +35,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "4",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -45,9 +45,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "8",
-    "value_picker_category": "layout",
-    "value_picker_group": "padding",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "padding",
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -55,9 +55,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "4",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -65,9 +65,9 @@
     "type": "STRING",
     "value_picker": "number-input",
     "value": "0",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "rectangle or circle",
@@ -75,9 +75,9 @@
     "type": "STRING",
     "value_picker": "dropdown",
     "value": "rectangle",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[{\"id\":\"rectangle\",\"value\":\"rectangle\"},{\"id\":\"circle\",\"value\":\"circle\"}]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[{\"id\":\"rectangle\",\"value\":\"rectangle\"},{\"id\":\"circle\",\"value\":\"circle\"}]"
   },
   {
     "description": "content description for accessibility",
@@ -85,9 +85,9 @@
     "type": "STRING",
     "value_picker": "text-input",
     "value": "",
-    "value_picker_category": "accessibility",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "accessibility",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -95,9 +95,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "8",
-    "value_picker_category": "layout",
-    "value_picker_group": "padding",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "padding",
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -105,9 +105,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "8",
-    "value_picker_category": "layout",
-    "value_picker_group": "padding",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "padding",
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -115,9 +115,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "8",
-    "value_picker_category": "layout",
-    "value_picker_group": "padding",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "padding",
+    "valuePickerOption": "[]"
   },
   {
     "description": "match or wrap or number",
@@ -125,9 +125,9 @@
     "type": "STRING",
     "value_picker": "combobox-input",
     "value": "match",
-    "value_picker_category": "layout",
-    "value_picker_group": "size",
-    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "size",
+    "valuePickerOption": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
   },
   {
     "description": "match or wrap or number",
@@ -135,8 +135,8 @@
     "type": "STRING",
     "value_picker": "combobox-input",
     "value": "wrap",
-    "value_picker_category": "layout",
-    "value_picker_group": "size",
-    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "size",
+    "valuePickerOption": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
   }
 ]

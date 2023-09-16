@@ -5,9 +5,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "8",
-    "value_picker_category": "layout",
-    "value_picker_group": "padding",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "padding",
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -15,9 +15,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "8",
-    "value_picker_category": "layout",
-    "value_picker_group": "padding",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "padding",
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -25,9 +25,9 @@
     "type": "STRING",
     "value_picker": "number-input",
     "value": "0",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -35,9 +35,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "8",
-    "value_picker_category": "layout",
-    "value_picker_group": "padding",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "padding",
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -45,9 +45,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "4",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "0 or any number",
@@ -55,9 +55,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "4",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "layout direction",
@@ -65,9 +65,9 @@
     "type": "STRING",
     "value_picker": "dropdown",
     "value": "Y",
-    "value_picker_category": "layout",
-    "value_picker_group": null,
-    "value_picker_option": "[{\"id\":\"X\",\"value\":\"(X) horizontal\"},{\"id\":\"Y\",\"value\":\"(Y) vertical\"},{\"id\":\"Z\",\"value\":\"(Z) overlay\"}]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[{\"id\":\"X\",\"value\":\"(X) horizontal\"},{\"id\":\"Y\",\"value\":\"(Y) vertical\"},{\"id\":\"Z\",\"value\":\"(Z) overlay\"}]"
   },
   {
     "description": "0 or any number",
@@ -75,9 +75,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "4",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "just for (X) vertical",
@@ -85,9 +85,9 @@
     "type": "STRING",
     "value_picker": "dropdown",
     "value": "top",
-    "value_picker_category": "layout",
-    "value_picker_group": null,
-    "value_picker_option": "[{\"id\":\"top\",\"value\":\"top\"},{\"id\":\"bottom\",\"value\":\"bottom\"},{\"id\":\"centerVertically\",\"value\":\"centerVertically\"}]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[{\"id\":\"top\",\"value\":\"top\"},{\"id\":\"bottom\",\"value\":\"bottom\"},{\"id\":\"centerVertically\",\"value\":\"centerVertically\"}]"
   },
   {
     "description": "0 or any number",
@@ -95,9 +95,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "8",
-    "value_picker_category": "layout",
-    "value_picker_group": "padding",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "padding",
+    "valuePickerOption": "[]"
   },
   {
     "description": "just for (Y) vertical",
@@ -105,9 +105,9 @@
     "type": "STRING",
     "value_picker": "combobox-input",
     "value": "top",
-    "value_picker_category": "layout",
-    "value_picker_group": null,
-    "value_picker_option": "[{\"id\":\"top\",\"value\":\"top\"},{\"id\":\"bottom\",\"value\":\"bottom\"},{\"id\":\"center\",\"value\":\"center\"},{\"id\":\"spaceBetween\",\"value\":\"spaceBetween\"},{\"id\":\"spaceAround\",\"value\":\"spaceAround\"},{\"id\":\"spaceEvenly\",\"value\":\"spaceEvenly\"}]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[{\"id\":\"top\",\"value\":\"top\"},{\"id\":\"bottom\",\"value\":\"bottom\"},{\"id\":\"center\",\"value\":\"center\"},{\"id\":\"spaceBetween\",\"value\":\"spaceBetween\"},{\"id\":\"spaceAround\",\"value\":\"spaceAround\"},{\"id\":\"spaceEvenly\",\"value\":\"spaceEvenly\"}]"
   },
   {
     "description": "0 or any number",
@@ -115,9 +115,9 @@
     "type": "INT",
     "value_picker": "number-input",
     "value": "4",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "(just for Z)",
@@ -125,9 +125,9 @@
     "type": "STRING",
     "value_picker": "dropdown",
     "value": "center",
-    "value_picker_category": "layout",
-    "value_picker_group": null,
-    "value_picker_option": "[{\"id\":\"center\",\"value\":\"center\"},{\"id\":\"centerStart\",\"value\":\"centerStart\"},{\"id\":\"centerEnd\",\"value\":\"centerEnd\"},{\"id\":\"bottomCenter\",\"value\":\"bottomCenter\"},{\"id\":\"bottomStart\",\"value\":\"bottomStart\"},{\"id\":\"bottomEnd\",\"value\":\"bottomEnd\"},{\"id\":\"topStart\",\"value\":\"topStart\"},{\"id\":\"topEnd\",\"value\":\"topEnd\"},{\"id\":\"topCenter\",\"value\":\"topCenter\"}]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[{\"id\":\"center\",\"value\":\"center\"},{\"id\":\"centerStart\",\"value\":\"centerStart\"},{\"id\":\"centerEnd\",\"value\":\"centerEnd\"},{\"id\":\"bottomCenter\",\"value\":\"bottomCenter\"},{\"id\":\"bottomStart\",\"value\":\"bottomStart\"},{\"id\":\"bottomEnd\",\"value\":\"bottomEnd\"},{\"id\":\"topStart\",\"value\":\"topStart\"},{\"id\":\"topEnd\",\"value\":\"topEnd\"},{\"id\":\"topCenter\",\"value\":\"topCenter\"}]"
   },
   {
     "description": "rectangle or circle",
@@ -135,9 +135,9 @@
     "type": "STRING",
     "value_picker": "dropdown",
     "value": "rectangle",
-    "value_picker_category": "clip",
-    "value_picker_group": null,
-    "value_picker_option": "[{\"id\":\"rectangle\",\"value\":\"rectangle\"},{\"id\":\"circle\",\"value\":\"circle\"}]"
+    "valuePickerCategory": "clip",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[{\"id\":\"rectangle\",\"value\":\"rectangle\"},{\"id\":\"circle\",\"value\":\"circle\"}]"
   },
   {
     "description": "hex color",
@@ -145,9 +145,9 @@
     "type": "STRING",
     "value_picker": "color-picker",
     "value": "#fafafa",
-    "value_picker_category": "color",
-    "value_picker_group": "backgroundColor",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "color",
+    "valuePickerGroup": "backgroundColor",
+    "valuePickerOption": "[]"
   },
   {
     "description": "a number between 0 to 100",
@@ -155,9 +155,9 @@
     "type": "INT",
     "value_picker": "slider",
     "value": "100",
-    "value_picker_category": "color",
-    "value_picker_group": "backgroundColor",
-    "value_picker_option": "[]"
+    "valuePickerCategory": "color",
+    "valuePickerGroup": "backgroundColor",
+    "valuePickerOption": "[]"
   },
   {
     "description": "true or false",
@@ -165,9 +165,9 @@
     "type": "BOOLEAN",
     "value_picker": "toggle",
     "value": "false",
-    "value_picker_category": "layout",
-    "value_picker_group": null,
-    "value_picker_option": "[]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[]"
   },
   {
     "description": "just for (Y) horizontal",
@@ -175,9 +175,9 @@
     "type": "STRING",
     "value_picker": "dropdown",
     "value": "start",
-    "value_picker_category": "layout",
-    "value_picker_group": null,
-    "value_picker_option": "[{\"id\":\"top\",\"value\":\"top\"},{\"id\":\"bottom\",\"value\":\"bottom\"},{\"id\":\"centerHorizontally\",\"value\":\"centerHorizontally\"}]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[{\"id\":\"top\",\"value\":\"top\"},{\"id\":\"bottom\",\"value\":\"bottom\"},{\"id\":\"centerHorizontally\",\"value\":\"centerHorizontally\"}]"
   },
   {
     "description": "match or wrap or number",
@@ -185,9 +185,9 @@
     "type": "STRING",
     "value_picker": "combobox-input",
     "value": "wrap",
-    "value_picker_category": "layout",
-    "value_picker_group": "size",
-    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "size",
+    "valuePickerOption": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
   },
   {
     "description": "match or wrap or number",
@@ -195,9 +195,9 @@
     "type": "STRING",
     "value_picker": "combobox-input",
     "value": "match",
-    "value_picker_category": "layout",
-    "value_picker_group": "size",
-    "value_picker_option": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": "size",
+    "valuePickerOption": "[{ \"id\": \"wrap\", \"value\": \"wrap\" }, { \"id\": \"match\", \"value\": \"match\" }]"
   },
   {
     "description": "just for (X) horizontal",
@@ -205,8 +205,8 @@
     "type": "STRING",
     "value_picker": "combobox-input",
     "value": "start",
-    "value_picker_category": "layout",
-    "value_picker_group": null,
-    "value_picker_option": "[{\"id\":\"start\",\"value\":\"start\"},{\"id\":\"end\",\"value\":\"end\"},{\"id\":\"center\",\"value\":\"center\"},{\"id\":\"spaceBetween\",\"value\":\"spaceBetween\"},{\"id\":\"spaceAround\",\"value\":\"spaceAround\"},{\"id\":\"spaceEvenly\",\"value\":\"spaceEvenly\"}]"
+    "valuePickerCategory": "layout",
+    "valuePickerGroup": null,
+    "valuePickerOption": "[{\"id\":\"start\",\"value\":\"start\"},{\"id\":\"end\",\"value\":\"end\"},{\"id\":\"center\",\"value\":\"center\"},{\"id\":\"spaceBetween\",\"value\":\"spaceBetween\"},{\"id\":\"spaceAround\",\"value\":\"spaceAround\"},{\"id\":\"spaceEvenly\",\"value\":\"spaceEvenly\"}]"
   }
 ]
